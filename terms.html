@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RUBI Terms of Service - Terms and conditions for using the RUBI Platform">
+    <title>Terms of Service - RUBI</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpolygon points='32,4 56,14 56,38 32,60 8,38 8,14' fill='%23e11d48'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --rubi-400: #fb7185;
+            --rubi-500: #f43f5e;
+            --rubi-600: #e11d48;
+            --rubi-700: #be123c;
+            --bg-dark: #0a0a0f;
+            --bg-surface: #12121a;
+            --bg-card: #1a1a24;
+            --text-primary: #ffffff;
+            --text-secondary: #a1a1aa;
+            --text-muted: #71717a;
+            --border: rgba(255, 255, 255, 0.08);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(10, 10, 15, 0.9);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+
+        .nav-logo {
+            width: 32px;
+            height: 32px;
+            filter: drop-shadow(0 0 8px rgba(225, 29, 72, 0.4));
+        }
+
+        .nav-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--rubi-400) 0%, var(--rubi-600) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--rubi-400);
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 7rem 2rem 4rem;
+        }
+
+        .page-header {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .page-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            background: linear-gradient(135deg, #fff 0%, var(--rubi-400) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .last-updated {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Content Styles */
+        h2 {
+            font-size: 1.35rem;
+            font-weight: 600;
+            margin: 2.5rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--rubi-600);
+            color: var(--text-primary);
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--rubi-400);
+            margin: 1.5rem 0 0.75rem;
+        }
+
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .section-number {
+            color: var(--rubi-500);
+            font-weight: 600;
+            margin-right: 0.5rem;
+        }
+
+        ul, ol {
+            color: var(--text-secondary);
+            margin: 1rem 0 1rem 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+        }
+
+        li::marker {
+            color: var(--rubi-500);
+        }
+
+        strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--rubi-400);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Acceptable Use Policy Section */
+        .aup-section {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .aup-section h3 {
+            margin-top: 0;
+            color: var(--rubi-400);
+        }
+
+        /* Important Notice Box */
+        .notice-box {
+            background: linear-gradient(135deg, rgba(225, 29, 72, 0.1) 0%, rgba(251, 113, 133, 0.05) 100%);
+            border: 1px solid rgba(225, 29, 72, 0.3);
+            border-radius: 12px;
+            padding: 1.25rem;
+            margin: 1.5rem 0;
+        }
+
+        .notice-box p {
+            margin-bottom: 0;
+            color: var(--text-primary);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 4rem;
+            padding: 2rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .footer-gem {
+            width: 32px;
+            height: 32px;
+            margin-bottom: 1rem;
+            opacity: 0.3;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        .footer-copy {
+            color: var(--text-muted);
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 768px) {
+            nav { padding: 1rem; }
+            .nav-links { display: none; }
+            .container { padding: 5rem 1.25rem 3rem; }
+            .page-title { font-size: 2rem; }
+            h2 { font-size: 1.2rem; }
+        }
+
+        @media print {
+            body { background: white; color: #1a1a1a; }
+            nav { display: none; }
+            .container { padding: 2rem; }
+            .page-title { color: #1a1a1a; -webkit-text-fill-color: #1a1a1a; }
+            p, li { color: #333; }
+            h2 { color: #1a1a1a; border-bottom-color: var(--rubi-600); }
+            h3 { color: var(--rubi-600); }
+            .aup-section, .notice-box { background: #f9fafb; border-color: #e5e7eb; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="nav-brand">
+            <svg class="nav-logo" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="navGem" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#fb7185"/>
+                        <stop offset="50%" style="stop-color:#e11d48"/>
+                        <stop offset="100%" style="stop-color:#9f1239"/>
+                    </linearGradient>
+                </defs>
+                <polygon points="32,4 56,14 56,38 32,60 8,38 8,14" fill="url(#navGem)"/>
+                <polygon points="32,4 56,14 44,22 32,18 20,22 8,14" fill="white" fill-opacity="0.3"/>
+                <circle cx="32" cy="32" r="6" fill="white" fill-opacity="0.9"/>
+            </svg>
+            <span class="nav-title">RUBI</span>
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="privacy-policy.html">Privacy</a>
+            <a href="terms.html" class="active">Terms</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="page-header">
+            <h1 class="page-title">Terms of Service</h1>
+            <p class="last-updated">Last updated: July 2026</p>
+        </header>
+
+        <h2><span class="section-number">1</span>These Terms</h2>
+
+        <p><strong>1.1</strong> These terms of use (the <strong>"Terms of Use"</strong>) govern your use and access to our services, including our website(s), our application(s), our application programming interfaces (APIs), our notifications and any information or content appearing therein (collectively our <strong>"Platform"</strong>).</p>
+
+        <p><strong>1.2</strong> By accessing or using our Platform, you agree to these Terms of Use which include our <a href="privacy-policy.html">Privacy Policy</a> regardless of whether you are a paying user or a non-paying visitor. If you are using our Platform as a representative of an entity, you are agreeing to these Terms of Use on behalf of that entity.</p>
+
+        <div class="notice-box">
+            <p><strong>1.3</strong> You should immediately cease using our Platform if you do not agree to these Terms of Use.</p>
+        </div>
+
+        <p><strong>1.4</strong> In these Terms of Use, <strong>"us"</strong>, <strong>"we"</strong> and <strong>"our"</strong> means RUBI Platform Pty Ltd.</p>
+
+        <h2><span class="section-number">2</span>About Us and How to Contact Us</h2>
+
+        <p><strong>2.1</strong> For any questions or problems relating to our Platform, our products or services or these Terms of Use, you can contact us by emailing us at <a href="mailto:hello@rubi1.io">hello@rubi1.io</a>.</p>
+
+        <p><strong>2.2</strong> When we use the words "writing" or "written" in these Terms of Use, this includes emails.</p>
+
+        <h2><span class="section-number">3</span>Changes to Terms</h2>
+
+        <p>We may amend these Terms of Use and/or our Platform from time to time and without notice. The most up-to-date Terms of Use will be made available on our Platform. By continuing to use our Platform and our services after the changes come into effect, you agree to be bound by the revised Terms of Use. However, we do not undertake to keep our Platform updated and we are not liable to you or anyone else if errors occur in the information on our Platform or if that information is not up to date.</p>
+
+        <h2><span class="section-number">4</span>Availability of Our Services</h2>
+
+        <p><strong>4.1</strong> We are constantly changing and improving our Platform and the products or services we provide. We may from time to time change or discontinue any of the products or services we offer, or add or remove functionalities or features, and we may suspend or stop certain products, services, functionalities or features altogether. If we discontinue certain products, services, functionalities or features, we will give you advance notice where reasonably possible.</p>
+
+        <p><strong>4.2</strong> We may release products, services, functionalities or features that we are still testing and evaluating. We will label such services as "beta", "preview", "early access" or "trial" or any words or phrases with similar meanings. You understand that these beta services are not as reliable as other products or services we offer.</p>
+
+        <p><strong>4.3</strong> We reserve the right to limit your use of our Platform and the services we provide, including the right to restrict, suspend or terminate your use and/or access to our Platform at any time without notice, including but not limited to, if we believe you are in breach of these Terms of Use or are misusing our Platform or any services we provide. We will not be responsible for any loss, cost, damage or liability that may arise as a result of limiting your use of our Platform and the services we provide.</p>
+
+        <p><strong>4.4</strong> We try our best to ensure that our Platform is always available, but we do not guarantee that the operation of or access to our Platform will be uninterrupted or continuous. Our Platform may be interrupted for maintenance, repairs, upgrades, network or equipment failures.</p>
+
+        <p><strong>4.5</strong> You are responsible for configuring your information technology, computer programmes and system in order to access our Platform. We do not guarantee that our Platform will be free from bugs or viruses.</p>
+
+        <h2><span class="section-number">5</span>Your Account and Password</h2>
+
+        <p><strong>5.1</strong> In registering for an account on our Platform, you must provide truthful, accurate and up-to-date information about yourself. We will handle all personal information we collect in accordance with our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+
+        <p><strong>5.2</strong> You should choose a strong and secure password. You must keep your password secure and confidential.</p>
+
+        <p><strong>5.3</strong> You agree not to share your account credentials or give others access to your account. If and when we detect that an account is shared by multiple users, we may treat this as a security breach and suspend or terminate your account.</p>
+
+        <p><strong>5.4</strong> We have the right to disable any account, at any time, if in our reasonable opinion you are in breach of these Terms of Use.</p>
+
+        <p><strong>5.5</strong> You agree to follow our Acceptable Use Policy, which is set out at the end of these Terms of Use.</p>
+
+        <p><strong>5.6</strong> You are responsible for all actions or activities that happen by, through or under your account, unless you report misuse.</p>
+
+        <h2><span class="section-number">6</span>Use of the Platform</h2>
+
+        <p><strong>6.1</strong> You must comply with the Acceptable Use Policy and all applicable laws and regulatory requirements, including privacy laws and intellectual property laws in using or accessing the Platform.</p>
+
+        <p><strong>6.2</strong> We grant you a personal, worldwide, royalty-free, non-assignable, non-transferrable, non-sublicensable, non-exclusive and revocable licence to access and use our Platform, including any software or application, as part of the services we offer. This licence is for the sole purpose of enabling you to use and enjoy the benefit of our Platform as provided by us and in the manner as permitted by these Terms of Use. Any reproduction or redistribution of this Platform is prohibited.</p>
+
+        <p><strong>6.3</strong> This licence to use our Platform will terminate if you do not comply with these Terms of Use or other additional terms or conditions imposed by us from time to time.</p>
+
+        <p><strong>6.4</strong> This Platform is for your personal, non-commercial use only. You must not copy, modify, distribute, transmit, display, reproduce, license, commercially exploit, create derivative works from, transfer, or sell any software, products, or services contained within the Platform.</p>
+
+        <h2><span class="section-number">7</span>Your Rights</h2>
+
+        <p><strong>7.1</strong> You retain your rights to any information or content you submit, post, or display on or through the Platform (<strong>"Your Content"</strong>). By submitting, posting, or displaying such content, you grant, and represent and warrant that you have all rights necessary to grant, us a worldwide, non-exclusive, royalty-free licence (with the right to sublicense) to use, process, copy, reproduce, adapt, modify, publish, transmit, display, and distribute your Content in any and all media or through any distribution channels (now known or later developed), subject to applicable provisions in our Privacy Policy.</p>
+
+        <p><strong>7.2</strong> You are responsible for your use of Your Content and any consequences thereof, including any consequences of the use of Your Content by other users or third parties. We are not responsible or liable for any use of Your Content, nor the use of any content or information submitted or posted by other users or visitors.</p>
+
+        <p><strong>7.3</strong> You warrant that Your Content is not and will not infringe rights of any third parties and that you hold all the necessary rights, power and authority to satisfy your obligations with regard to Your Content under these Terms of Use.</p>
+
+        <p><strong>7.4</strong> If you believe your intellectual property rights have been infringed, please contact us at <a href="mailto:privacy@rubi1.io">privacy@rubi1.io</a>.</p>
+
+        <p><strong>7.5</strong> If we allow you to post any information on our Platform, we have the right to take down this information at our sole discretion and without notice.</p>
+
+        <h2><span class="section-number">8</span>Our Rights</h2>
+
+        <p><strong>8.1</strong> All intellectual property rights subsisting in the Platform or the products or services we provide belong to us or have been lawfully licensed to us. All rights under applicable laws are hereby reserved.</p>
+
+        <p><strong>8.2</strong> We may (at our discretion but we are not obliged to) review content or information submitted or posted by users on our Platform. We reserve the right to remove any content which we consider to be offensive, harmful, deceptive, discriminatory, defamatory or otherwise inappropriate or misleading, or content that we believe may be infringing the rights of third parties. We do not endorse or support any views expressed by any users on our Platform.</p>
+
+        <p><strong>8.3</strong> Our name "RUBI" and our marks and logos are our trade marks (be it registered or unregistered) and may not be used without our express prior written consent.</p>
+
+        <h2><span class="section-number">9</span>Feedback</h2>
+
+        <p><strong>9.1</strong> We value and welcome feedback on our Platform. You agree that we are free to use, disclose, adopt and/or modify any feedback and any information (including any ideas, concepts, proposals, suggestions or comments) provided by you to use in connection with our Platform or any products or services we offer, without any payment to you.</p>
+
+        <p><strong>9.2</strong> You hereby waive and agree to waive any rights to claim for any fees, royalties, charges, or other payments in relation to our use, disclosure, adoption, and/or modification of any of your feedback. You further acknowledge that, by acceptance of your feedback, we do not waive any rights to use similar or related ideas previously known to us, developed by us or obtained from sources other than you.</p>
+
+        <h2><span class="section-number">10</span>Disclaimers</h2>
+
+        <p><strong>10.1</strong> To the fullest extent permitted by law, including the Australian Consumer Law, we (including our holding company(ies), subsidiaries, affiliates, directors, officers, employees, agents, representatives, partners, and licensors (collectively, <strong>"Our Entities"</strong>)) make no representations or warranties about the Platform and any products or services we offer, including but not limited to warranties or representations that the information or content you find on the Platform is always accurate, truthful, complete, and up-to-date, that access will be uninterrupted, error-free or free from viruses, or that the Platform will be secure. You must take your own precautions to ensure that whatever you select for your use from our Platform is free of viruses or anything else (such as worms or Trojan horses) that may interfere with or damage the operations of your computer systems.</p>
+
+        <p><strong>10.2</strong> Our Entities are not responsible for the conduct of or any content or information submitted or posted by any user of the Platform (whether online or offline).</p>
+
+        <h2><span class="section-number">11</span>Limitation on Liabilities</h2>
+
+        <p><strong>11.1</strong> To the fullest extent permitted by law, including the Australian Consumer Law, Our Entities exclude all liability in connection with or arising out of the provision of the Platform or any materials or information contained on the Platform in respect of the accuracy, completeness, fitness for purpose or legality of any information accessed using the Platform.</p>
+
+        <p><strong>11.2</strong> To the fullest extent permitted by law, including Australian Consumer Law, Our Entities are not liable to you or others for:</p>
+        <ul>
+            <li>any indirect, incidental, special, exemplary, consequential, or punitive damages; or</li>
+            <li>any loss of data, business, opportunities, reputation, profits, or revenues,</li>
+        </ul>
+        <p>relating to the use of our Platform or any products or services we offer, or as a result of the inaccessibility of our Platform or the materials contained on our Platform being incorrect, incomplete or not up-to-date.</p>
+
+        <p><strong>11.3</strong> We do not exclude or limit our liability to you where it would be illegal to do so. This includes any of our liability for fraud or making fraudulent misrepresentation in operating the Platform.</p>
+
+        <p><strong>11.4</strong> In some countries or jurisdictions you may have additional legal rights as a consumer. In such cases, nothing in these Terms of Use limit your legal rights as a consumer that may not be waived by contract.</p>
+
+        <p><strong>11.5</strong> Other than the types of liabilities that we cannot limit by law, the liabilities of Our Entities to you (in aggregate) shall in no circumstances exceed:</p>
+        <ul>
+            <li>in the case of products, the replacement of the products or the supply of equivalent products, the repair of the products, the payment of the cost of replacing the products or of supplying equivalent products, or the payment of the cost of having the products repaired; or</li>
+            <li>in the case of services, the supplying of the services again, or the payment of the cost of having the services supplied again.</li>
+        </ul>
+
+        <p><strong>11.6</strong> Our Platform may contain links to websites operated by third parties. Those links are provided for convenience and may not remain current or be maintained. Unless expressly stated otherwise, we do not endorse and are not responsible for the content of those linked websites and have no control over or rights in those linked websites.</p>
+
+        <h2><span class="section-number">12</span>Your Representation</h2>
+
+        <p><strong>12.1</strong> Our Platform is not intended for and may not be used by minors. By using our Platform, you represent that you are an adult and that you are able to legally enter into contractual agreements.</p>
+
+        <p><strong>12.2</strong> If you are using the Platform on behalf of an entity, by using the Platform you represent that you have the necessary rights and authority to agree to these Terms of Use on behalf of that entity.</p>
+
+        <h2><span class="section-number">13</span>Indemnity</h2>
+
+        <p><strong>13.1</strong> You agree to indemnify and hold Our Entities harmless from and against all liabilities, damages, claims, costs (including legal fees and costs), and expenses in connection with or arising from (i) your breach of these Terms of Use, (ii) your use of our Platform and/or (iii) any misrepresentation made by you.</p>
+
+        <p><strong>13.2</strong> You also agree to fully co-operate with us in the defence or settlement of any claim in relation to or arising out of your use of Platform.</p>
+
+        <h2><span class="section-number">14</span>Termination</h2>
+
+        <p><strong>14.1</strong> These Terms of Use will continue to apply until terminated by either you or us as follows.</p>
+
+        <p><strong>14.2</strong> You may stop using the Platform at any time by deactivating your account.</p>
+
+        <p><strong>14.3</strong> We reserve the right to suspend or terminate your access to our Platform, for any reason, including if we reasonably believe:</p>
+        <ul>
+            <li>you are in serious or repeated breach of these Terms of Use (including a prolonged failure to settle any payment);</li>
+            <li>you are using the Platform in a manner that would cause a real risk of harm or loss to us, other users, or the public;</li>
+            <li>we are requested to do so by government or regulatory authorities or as required under applicable laws, regulations or legal processes; or</li>
+            <li>our provision of the Platform to you is no longer possible or commercially viable.</li>
+        </ul>
+        <p>In any of the above cases, we will notify you by the email address associated with your account or at the next time you attempt to access your account, unless we are prohibited from notifying you by law.</p>
+
+        <p><strong>14.4</strong> Upon termination of your access, these Terms of Use will also terminate except for Clauses 1 to 18.</p>
+
+        <p><strong>14.5</strong> Where we consider necessary or appropriate, we will report any breach of these Terms of Use to law enforcement authorities.</p>
+
+        <h2><span class="section-number">15</span>Entire Agreement</h2>
+
+        <p><strong>15.1</strong> These Terms of Use constitute the entire agreement between any user and us in relation to the subject matter of these Terms of Use. These Terms of Use supersede and extinguish all other agreements, promises, assurances, warranties, representations and understandings between any user and us, whether written or oral, in relation to the use of or any transactions on the Platform.</p>
+
+        <p><strong>15.2</strong> You acknowledge that you will have no remedies in respect of any statement, representation, assurance or warranty (whether made innocently or negligently) that is not set out in these Terms of Use.</p>
+
+        <h2><span class="section-number">16</span>Other Important Terms</h2>
+
+        <p><strong>16.1</strong> These Terms of Use and any rights and licences granted under them, may not be transferred or assigned by you, but may be assigned by us without restriction.</p>
+
+        <p><strong>16.2</strong> If any provision of these Terms of Use is or becomes invalid, illegal or unenforceable, it will be deemed modified to the minimum extent necessary to make it valid, legal and enforceable. If such modification is not possible, the relevant provision will be deemed deleted. Any modification to or deletion of a provision under this clause will not affect the validity and enforceability of the rest of these Terms of Use.</p>
+
+        <p><strong>16.3</strong> Even if we delay in enforcing this contract, we can still enforce it later. If we do not insist immediately that you do anything you are required to do under these Terms of Use, or if we delay in taking steps against you in respect of your breach of these Terms of Use, that will not mean that you do not have to do those things and it will not prevent us taking steps against you at a later date.</p>
+
+        <h2><span class="section-number">17</span>Contact</h2>
+
+        <p>If you have any question about these Terms or the Acceptable Use Policy, please contact us at <a href="mailto:hello@rubi1.io">hello@rubi1.io</a>.</p>
+
+        <h2><span class="section-number">18</span>Governing Law and Jurisdiction</h2>
+
+        <p>These Terms will be governed by the laws of New South Wales, Australia. Each party submits to the non-exclusive jurisdiction of courts exercising jurisdiction in New South Wales sitting in Sydney, Australia.</p>
+
+        <div class="aup-section">
+            <h3>Acceptable Use Policy</h3>
+            <p>As part of these Terms of Use, you agree not to misuse the Platform or help anyone else to do so. For example, you agree not to do any of the following in connection with the Platform:</p>
+            <ul>
+                <li>use our Platform for unlawful or unauthorised purposes;</li>
+                <li>probe, scan, or test the vulnerability of any system or network;</li>
+                <li>breach or otherwise circumvent any security or authentication measures or service use limits;</li>
+                <li>access, tamper with, or use non-public areas or parts of the Platform;</li>
+                <li>interfere with or disrupt any user, host, or network, for example by sending a virus, trojan, worm, logic bomb, or any other material that is malicious or technologically harmful, overloading, flooding, spamming, or mail-bombing any part of the Platform, or by scripting the creation of any content in such manner as to interfere with or create an undue burden on the Platform;</li>
+                <li>reverse engineer, decompile, disassemble, decipher or otherwise attempt to derive the source code for the Platform or any related technology that is not open source;</li>
+                <li>access, search, or create accounts for the Platform by any means (automated or otherwise) other than our publicly supported interfaces (for example, "scraping" or creating accounts in bulk) or attempt to do so;</li>
+                <li>send unsolicited communications, promotions or advertisements, or spam;</li>
+                <li>forge any TCP/IP packet header or any part of the header information in any email;</li>
+                <li>send altered, deceptive, or false source-identifying information, including "spoofing" or "phishing";</li>
+                <li>conduct surveys, contests, or pyramid schemes, or promote or advertise products or services without appropriate authorisation;</li>
+                <li>abuse referrals or promotions;</li>
+                <li>post, publish, upload, display, distribute, or share non-authorised material including, but not limited to, material that is, in our opinion, likely to cause annoyance, or which is unlawful, inappropriate, profane, pornographic, obscene, indecent, libelous, defamatory, abusive, racist, threatening or knowingly false, and/or that infringe intellectual property rights;</li>
+                <li>violate the letter or spirit of these Terms of Use;</li>
+                <li>violate applicable laws or regulations in any way; or</li>
+                <li>violate the privacy or infringe the rights of others.</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <svg class="footer-gem" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="32,4 56,14 56,38 32,60 8,38 8,14" fill="currentColor"/>
+        </svg>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 RUBI Platform. All rights reserved.</p>
+    </footer>
+</body>
+</html>
